@@ -1,0 +1,440 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{50C0BCFD-B527-4EB3-8AE5-766F7F385FD8}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>TicTacToe</RootNamespace>
+    <AssemblyName>TicTacToe</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="FormAbout.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAbout.Designer.cs">
+      <DependentUpon>FormAbout.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormHighscore.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormHighscore.Designer.cs">
+      <DependentUpon>FormHighscore.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formload.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formload.Designer.cs">
+      <DependentUpon>Formload.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormLoadGame.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormLoadGame.Designer.cs">
+      <DependentUpon>FormLoadGame.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormLoadGame1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormLoadGame1.Designer.cs">
+      <DependentUpon>FormLoadGame1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormMainMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMainMenu.Designer.cs">
+      <DependentUpon>FormMainMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormNewGame5InRow2Player.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormNewGame5InRow2Player.Designer.cs">
+      <DependentUpon>FormNewGame5InRow2Player.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormNewGame_typePlayer3InArow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormNewGame_typePlayer3InArow.Designer.cs">
+      <DependentUpon>FormNewGame_typePlayer3InArow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormNewGame_typePlayer5InArow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormNewGame_typePlayer5InArow.Designer.cs">
+      <DependentUpon>FormNewGame_typePlayer5InArow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormNewGame5inRow1Player.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormNewGame5inRow1Player.Designer.cs">
+      <DependentUpon>FormNewGame5inRow1Player.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormNewGame5inRow3Player.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormNewGame5inRow3Player.Designer.cs">
+      <DependentUpon>FormNewGame5inRow3Player.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormNewGameChallengePlay_Mode.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormNewGameChallengePlay_Mode.Designer.cs">
+      <DependentUpon>FormNewGameChallengePlay_Mode.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormNewGameChoosePlay.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormNewGameChoosePlay.Designer.cs">
+      <DependentUpon>FormNewGameChoosePlay.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormPlayBoard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormPlayBoard.Designer.cs">
+      <DependentUpon>FormPlayBoard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormPlayboard3InArow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormPlayboard3InArow.Designer.cs">
+      <DependentUpon>FormPlayboard3InArow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormReplaceSave.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormReplaceSave.Designer.cs">
+      <DependentUpon>FormReplaceSave.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormSaveReplace.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormSaveReplace.Designer.cs">
+      <DependentUpon>FormSaveReplace.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormSetting.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormSetting.Designer.cs">
+      <DependentUpon>FormSetting.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormWelcomee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormWelcomee.Designer.cs">
+      <DependentUpon>FormWelcomee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HighscoreL2.Designer.cs">
+      <DependentUpon>HighscoreL2.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="LoadGameRequest.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LoadGameRequest.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\SettingChoise.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SettingChoise.resx</DependentUpon>
+    </Compile>
+    <Compile Include="FormWelcome.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormWelcome.Designer.cs">
+      <DependentUpon>FormWelcome.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="FormResult.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormResult.Designer.cs">
+      <DependentUpon>FormResult.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ResultHighscoreRequest.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ResultHighscoreRequest.resx</DependentUpon>
+    </Compile>
+    <Compile Include="HighscoreL1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>HighscoreL1.resx</DependentUpon>
+    </Compile>
+    <Compile Include="userChoise.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>userChoise.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="FormAbout.resx">
+      <DependentUpon>FormAbout.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormHighscore.resx">
+      <DependentUpon>FormHighscore.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formload.resx">
+      <DependentUpon>Formload.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormLoadGame.resx">
+      <DependentUpon>FormLoadGame.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormLoadGame1.resx">
+      <DependentUpon>FormLoadGame1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMainMenu.resx">
+      <DependentUpon>FormMainMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormNewGame5InRow2Player.resx">
+      <DependentUpon>FormNewGame5InRow2Player.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormNewGame_typePlayer3InArow.resx">
+      <DependentUpon>FormNewGame_typePlayer3InArow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormNewGame_typePlayer5InArow.resx">
+      <DependentUpon>FormNewGame_typePlayer5InArow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormNewGame5inRow1Player.resx">
+      <DependentUpon>FormNewGame5inRow1Player.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormNewGame5inRow3Player.resx">
+      <DependentUpon>FormNewGame5inRow3Player.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormNewGameChallengePlay_Mode.resx">
+      <DependentUpon>FormNewGameChallengePlay_Mode.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormNewGameChoosePlay.resx">
+      <DependentUpon>FormNewGameChoosePlay.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormPlayBoard.resx">
+      <DependentUpon>FormPlayBoard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormPlayboard3InArow.resx">
+      <DependentUpon>FormPlayboard3InArow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormReplaceSave.resx">
+      <DependentUpon>FormReplaceSave.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormSaveReplace.resx">
+      <DependentUpon>FormSaveReplace.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormSetting.resx">
+      <DependentUpon>FormSetting.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormWelcomee.resx">
+      <DependentUpon>FormWelcomee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HighscoreL2.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>HighscoreL2.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoadGameRequest.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>LoadGameRequest.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\SettingChoise.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>SettingChoise.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormWelcome.resx">
+      <DependentUpon>FormWelcome.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormResult.resx">
+      <DependentUpon>FormResult.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ResultHighscoreRequest.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>ResultHighscoreRequest.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HighscoreL1.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>HighscoreL1.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="userChoise.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>userChoise.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BackGround.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\virtual rupp.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rupp.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Rupp Boatbuilding.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\boatBuilding.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rupp1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\4.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\5.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\6.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\7.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\8.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\9.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\10.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\11.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\12.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\13.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\14.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\15.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\16.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\index.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\minionCreed.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ironMinion.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\capMinion.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wolveMinion.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\spiderMinion.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dracMinion.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\batMinion.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DbuildingRUPP.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kuntha.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Lika.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\makara.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sammnang.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Panharith.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Panharith1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rupp_logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fe_logo.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
